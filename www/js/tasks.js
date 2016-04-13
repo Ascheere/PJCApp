@@ -121,6 +121,16 @@ function jobTimer(){
 	}
     document.getElementById("overallTime").innerHTML = "<b>Overall Time - </b>" + pad(hours) + ":" + pad(minutes) + ":" + pad(seconds);
 }
+ /**
+  * This is a jqueryUI function that displays an html piece in a div tag as a dialog
+  * Andrew Scheerenberger Addition 4/12/2016 10pm
+  */
+ 
+ $(function(){
+    $( "#dialog" ).dialog(); 
+ });
+
+
 
 var partialTimer = setInterval(taskTimer, 1000);
 var tSeconds = 0;
